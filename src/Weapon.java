@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Weapon {
+public class Weapon extends Item{
     int minDamage;
     int maxDamage;
     private Random generator = new Random();
@@ -13,6 +13,6 @@ public class Weapon {
     
     public int Attack(){
        int attack = generator.nextInt(minDamage, maxDamage +1 );
-        return attack;
+       return attack;
     }
 }

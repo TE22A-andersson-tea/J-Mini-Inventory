@@ -1,8 +1,13 @@
-
-
-public class Consumable {
+public class Consumable extends Item{
     int usesMax;
     int usesCurrent;
+
+    public Consumable(int inUsesMax, int inUsesCurrent){
+        usesMax = inUsesMax;
+        usesCurrent = inUsesCurrent;
+    }
+
+    //Consumable beginnerPotion = new Consumable(1, 0);
 
     public void Use(Character target){
         usesMax = 10;
